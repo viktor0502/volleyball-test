@@ -1,0 +1,60 @@
+// @import './base/normalize';
+.founder {
+  background: $black-color;
+  color: #fff;
+  padding-top: 120px;
+}
+
+.founder__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+.founder__title {
+  position: relative;
+  h2 {
+
+    margin-bottom: 15px;
+  }
+  &::before{
+    content: url(/src/assets/img/founder/founder.png);
+    position: absolute;
+    left: -150px;
+    top: -200px;
+  }
+}
+.founder__descr {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.17em;
+  span {
+    color: $blue-hard;
+  }
+}
+.founder__list {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.16em;
+  margin-top: 57px;
+  li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &:first-child{
+        margin-bottom: 27px;
+    }
+    &::before{
+        content: '';
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        background: $blue-hard;
+        flex-shrink: 0;
+        font-family: 'Condensed', sans-serif;
+        font-weight: 300;
+    }
+  }
+}
+

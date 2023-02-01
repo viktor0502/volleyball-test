@@ -1,0 +1,21 @@
+@import './scss/base/normalize';
+@import './scss/base/var';
+@import './scss/base/classes';
+@import './scss/blocks/nav';
+@import './scss/blocks/header';
+@import './scss/blocks/benefits';
+@import './scss/blocks/founder';
+@import './scss/blocks/coach';
+@import './scss/blocks/trainings';
+@import './scss/blocks/camps-slider';
+@import './scss/blocks/video';
+@import './scss/blocks/about';
+@import './scss/blocks/reviews';
+@import './scss/blocks/form';
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+

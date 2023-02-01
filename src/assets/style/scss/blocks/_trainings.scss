@@ -1,0 +1,57 @@
+.trainings {
+}
+.trainings__wrapper {
+  display: flex;
+  gap: 78px;
+}
+.trainings__content {
+  p {
+    font-family: Hebrew, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16em;
+    margin-top: 24px;
+  }
+}
+.trainigs__img{
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-top: -38px;
+  img{
+    object-position: 70% 38px;
+    object-fit: cover;
+    width: 409px;
+    height: 568px;
+  }
+}
+.ad__wrapper {
+  padding: 104px 0 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .btn {
+    width: 346px;
+    padding: 32px 0;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+}
+.ad__title {
+  max-width: 616px;
+  h5 {
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 0.11em;
+    margin-bottom: 24px;
+  }
+}
+.ad__descr {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.11em;
+  font-family: Hebrew, sans-serif;
+  color: #6f7578;
+}

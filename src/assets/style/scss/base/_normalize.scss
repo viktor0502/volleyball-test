@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Condensed, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  background: #EFEFEF;
+}
+@font-face {
+  font-family: Condensed;
+  src: url(../fonts/OpenSansCondensed-Bold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Condensed;
+  src: url(../fonts/OpenSansCondensed-Light.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Hebrew;
+  src: url(../fonts/OpenSansHebrewCondensed-Regular.ttf) format("ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Hebrew;
+  src: url(../fonts/OpenSansHebrewCondensed-Light.ttf) format("ttf");
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2{
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.17em;
+}
+main{
+  overflow: hidden;
+}

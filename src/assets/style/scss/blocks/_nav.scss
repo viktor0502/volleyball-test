@@ -1,0 +1,20 @@
+.nav__wrapper {
+    padding: 18px 0;
+    .nav__logo {
+    }
+    .nav__menu {
+      gap: 32px;
+      justify-content: center;
+    }
+    .nav__link {
+      transition: $transition;
+      font-size: 20px;
+      &:hover{
+        color: $yellow-light;
+      }
+    }
+    .nav__phone {
+      gap: 16px;
+      font-size: 18px;
+    }
+  }

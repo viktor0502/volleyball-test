@@ -1,0 +1,125 @@
+.faq {
+  padding: 124px 0 162px;
+  h2 {
+    margin-bottom: 42px;
+  }
+}
+:root {
+  --swiper-navigation-size: unset;
+}
+.swiper-btns {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  gap: 42px;
+  .swiper-button-prev {
+    img {
+      transform: rotate(180deg);
+    }
+    &:after {
+      content: "";
+    }
+  }
+  .swiper-button-next {
+    &:after {
+      content: "";
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    background: $yellow-light;
+    padding: 10px 16px;
+  }
+}
+.swiper-review {
+  padding: 80px 0;
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+  }
+}
+.swiper-pagination {
+  
+  .swiper-pagination-bullet {
+    background: #B7B7B7;
+  }
+}
+
+
+.accordion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.accordion__btn {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  padding: 24px 32px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.17em;
+  }
+  &::after {
+    content: url(/src/assets/img/icons/Plus.svg);
+  }
+  &--active {
+    &::after {
+      content: url(/src/assets/img/icons/minus.svg);
+    }
+  }
+}
+.accordion__content {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  p {
+    padding: 32px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.16em;
+    color: #6f7578;
+    font-family: Hebrew, sans-serif;
+  }
+}
+
+
+.reviews{
+  padding-top: 136px;
+  
+}
+.reviews__wrapper{
+    padding: 52px 62px;
+    background: #fff;
+}
+.review__item {
+  gap: 52px;
+}
+.review__img {
+  width: 176px;
+}
+.review__content {
+  h5 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    letter-spacing: 0.11em;
+    margin-bottom: 24px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.16em;
+    color: #6f7578;
+    font-family: Hebrew, sans-serif;
+  }
+}

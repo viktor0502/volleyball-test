@@ -1,0 +1,20 @@
+{
+    "camps" : [
+        {
+            "date" : "7 feb",
+            "location" : "Thailand"
+        },
+        {
+            "date" : "12 apr",
+            "location" : "Moscow"
+        },
+        {
+            "date" : "17 june",
+            "location" : "Kiev"
+        },
+        {
+            "date" : "5 aug",
+            "location" : "Rome"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+@import './var';
+
+.flex {
+    display: flex;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    // max-width: fit-content;
+  }
+  .btn-yellow {
+    color: $black-color;
+    background: $yellow-light;
+  }
+  .btn-blue {
+    color: #fff;
+    background: $blue-hard
+  }

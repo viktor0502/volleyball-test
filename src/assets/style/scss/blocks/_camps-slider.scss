@@ -1,0 +1,90 @@
+.camps-slider {
+  background-image: url(/src/assets/img/camps/bg-palms.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 88px 0 120px;
+  color: #fff;
+  img {
+    width: 100%;
+  }
+}
+.camps-slider__btns {
+  gap: 10px;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.17em;
+}
+.camps-slider__btn {
+  &--active {
+    color: $yellow-light;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 3px;
+      background: $yellow-light;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+    }
+  }
+}
+.camps-slider__descr {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.11em;
+  max-width: 60%;
+  margin-top: 32px;
+  margin-bottom: 52px;
+  span {
+    color: $yellow-light;
+  }
+}
+.camps-item {
+  max-width: 360px;
+  background: #fff;
+
+  .btn {
+    padding: 12px 24px;
+    width: fit-content;
+    margin-top: 34px;
+  }
+}
+
+.camps-item__content {
+  padding: 24px;
+}
+.camps-item__date {
+  font-size: 26px;
+  line-height: 35px;
+  letter-spacing: 0.11em;
+  color: $blue-hard;
+  margin-bottom: 12px;
+}
+.camps-item__location {
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.11em;
+  color: $black-color;
+}
+.swiper-camps {
+  margin-left: calc((100vw - 1240px) / 2);
+  padding-bottom: 80px;
+}
+.swiper-pagination {
+  text-align: start;
+  .swiper-pagination-bullet {
+    width: 30px;
+    height: 3px;
+    border-radius: 0;
+    background: #fff;
+    opacity: 1;
+    transition: $transition;
+    &.swiper-pagination-bullet-active {
+      background: $yellow-light;
+      width: 63px;
+    }
+  }
+}
