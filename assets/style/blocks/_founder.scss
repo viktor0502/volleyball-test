@@ -1,0 +1,130 @@
+// @import './base/normalize';
+.founder {
+  background: $black-color;
+  color: #fff;
+  padding-top: 120px;
+  position: relative;
+  &::before {
+    content: "";
+    background: url(/assets/img/founder/founder.png);
+    position: absolute;
+    left: 0px;
+    top: 120px;
+    width: 290px;
+    height: 285px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.founder__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+.founder__title {
+  position: relative;
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+.founder__descr {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.17em;
+  span {
+    color: $blue-hard;
+  }
+}
+.founder__list {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.16em;
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      background: $blue-hard;
+      flex-shrink: 0;
+      font-family: "Condensed", sans-serif;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .founder {
+    &::before {
+      width: 240px;
+      height: 225px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .founder {
+    padding-top: 60px;
+    &::before {
+      top: -40px;
+    }
+    img {
+      width: 387px;
+    }
+  }
+  .founder__descr {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .founder__list {
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .founder {
+    padding-top: 130px;
+    &::before{
+      left: 40%;
+      top: 0;
+      transform: rotate(20deg);
+
+    }
+    img {
+      width: 359px;
+    }
+  }
+  .founder__wrapper{
+    gap: 30px;
+  }
+  .founder__list{
+    font-size: 16px;
+    gap: 24px;
+    padding-bottom: 2em;
+
+  }
+}
+@media screen and (max-width: 760px){
+  .founder__wrapper{
+    flex-direction: column;
+  }
+  .founder{
+    padding-top: 150px;
+    img{
+      width: 313px;
+    }
+    &::before{
+      left: auto;
+      right: -30px;
+    }
+  }
+}

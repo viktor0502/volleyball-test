@@ -29,23 +29,17 @@
   .swiper-button-next {
     position: static;
     background: $yellow-light;
-    padding: 10px 16px;
+    padding: 6px 13px;
   }
 }
 .swiper-review {
   padding: 80px 0;
-  .swiper-wrapper {
-  }
-  .swiper-slide {
-  }
 }
 .swiper-pagination {
-  
   .swiper-pagination-bullet {
-    background: #B7B7B7;
+    background: #b7b7b7;
   }
 }
-
 
 .accordion {
   display: grid;
@@ -67,11 +61,23 @@
     letter-spacing: 0.17em;
   }
   &::after {
-    content: url(/src/assets/img/icons/Plus.svg);
+    content: "";
+    flex-shrink: 0;
+    background: url(/assets/img/icons/Plus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 56px;
+    height: 44px;
   }
   &--active {
     &::after {
-      content: url(/src/assets/img/icons/minus.svg);
+      flex-shrink: 0;
+      content: "";
+      background: url(/assets/img/icons/minus.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
     }
   }
 }
@@ -91,14 +97,12 @@
   }
 }
 
-
-.reviews{
+.reviews {
   padding-top: 136px;
-  
 }
-.reviews__wrapper{
-    padding: 52px 62px;
-    background: #fff;
+.reviews__wrapper {
+  padding: 52px 62px;
+  background: #fff;
 }
 .review__item {
   gap: 52px;
@@ -121,5 +125,64 @@
     letter-spacing: 0.16em;
     color: #6f7578;
     font-family: Hebrew, sans-serif;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .swiper-btns {
+    gap: 36px;
+  }
+  .review__img {
+    width: 130px;
+  }
+  .review__content {
+    h5 {
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.11em;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.16em;
+    }
+  }
+  .faq{
+    padding: 80px 0 100px;
+  }
+  .accordion {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 18px;
+  }
+  .accordion__btn {
+    padding: 16px;
+
+    &::after {
+      width: 48px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .reviews__wrapper {
+    padding: 32px 24px;
+  }
+  .review__img {
+    display: none;
+  }
+  .swiper-review {
+    padding: 24px 0 42px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .review__title {
+    flex-direction: column;
+    align-items: unset;
+    gap: 42px;
+  }
+  .swiper-btns {
+    order: -1;
   }
 }

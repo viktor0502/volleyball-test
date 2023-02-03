@@ -1,5 +1,5 @@
 .camps-slider {
-  background-image: url(/src/assets/img/camps/bg-palms.jpg);
+  background-image: url(/assets/img/camps/bg-palms.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -69,8 +69,11 @@
   letter-spacing: 0.11em;
   color: $black-color;
 }
-.swiper-camps {
+.container--right{
   margin-left: calc((100vw - 1240px) / 2);
+
+}
+.swiper-camps {
   padding-bottom: 80px;
 }
 .swiper-pagination {
@@ -85,6 +88,48 @@
     &.swiper-pagination-bullet-active {
       background: $yellow-light;
       width: 63px;
+    }
+  }
+}
+@media screen and (max-width: 1400px){
+  .container--right{
+    margin-left: calc((100vw - 1140px) / 2);
+  }
+}
+@media screen and (max-width: 1200px){
+  .container--right{
+    margin-left: calc((100vw - 960px) / 2);
+  }
+}
+@media screen and (max-width: 992px){
+  .container--right{
+    margin-left: calc((100vw - 720px) / 2);
+  }
+}
+@media screen and (max-width: 760px){
+  .camps-slider__title{
+    flex-direction: column;
+    align-items: unset;
+    .camps-slider__btns{
+      order: -1;
+      margin-bottom: 54px;
+    }
+  }
+  .camps-slider__descr{
+    margin-top: 18px;
+    max-width: unset;
+  }
+  .container--right{
+    margin-left: calc((100vw - 540px) / 2);
+  }
+}
+@media screen and (max-width: 576px){
+  .container--right{
+    margin-left: unset;
+    max-width: 100%;
+    padding: 0 15px;
+    display: flex; justify-content: center; 
+    .swiper-wrapper{
     }
   }
 }

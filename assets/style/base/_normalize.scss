@@ -55,16 +55,23 @@ main {
   overflow: hidden;
 }
 
-
 @keyframes btn-hover {
   0% {
     width: 0;
     left: 0;
     opacity: 0;
   }
-  
+
   100% {
     width: 100%;
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 30px;
+    line-height: 41px;
+  }
+}
+

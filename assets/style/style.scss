@@ -1,17 +1,21 @@
-@import './scss/base/normalize';
-@import './scss/base/var';
-@import './scss/base/classes';
-@import './scss/blocks/nav';
-@import './scss/blocks/header';
-@import './scss/blocks/benefits';
-@import './scss/blocks/founder';
-@import './scss/blocks/coach';
-@import './scss/blocks/trainings';
-@import './scss/blocks/camps-slider';
-@import './scss/blocks/video';
-@import './scss/blocks/about';
-@import './scss/blocks/reviews';
-@import './scss/blocks/form';
+@import './base/normalize';
+@import './base/var';
+@import './base/classes';
+@import './blocks/about';
+@import './blocks/benefits';
+@import './blocks/camps-slider';
+@import './blocks/coach';
+@import './blocks/footer';
+@import './blocks/form';
+@import './blocks/founder';
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/nav';
+@import './blocks/reviews';
+@import './blocks/trainings';
+@import './blocks/video';
+
+
 
 .container {
   max-width: 1240px;
@@ -44,5 +48,7 @@
     padding: 0 15px;
   }
 }
+
+
 
 

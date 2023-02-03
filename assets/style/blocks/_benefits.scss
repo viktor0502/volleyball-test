@@ -1,6 +1,6 @@
 .benefits {
   padding: 64px 0 84px;
-  background-image: url(/src/assets/img/camps/bg-palms.jpg);
+  background-image: url(/assets/img/camps/bg-palms.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -25,8 +25,7 @@
   z-index: 2;
 }
 .benefits__item {
-  // flex: 1 0 33%;
-  h4{
+  h4 {
     font-size: 26px;
     letter-spacing: 0.11em;
   }
@@ -46,7 +45,6 @@
   font-size: 64px;
   line-height: 87px;
   letter-spacing: 0.11em;
-
 }
 .benefits__descr {
   font-weight: 300;
@@ -54,4 +52,34 @@
   line-height: 22px;
   font-family: Hebrew, sans-serif;
   letter-spacing: 0.11em;
+}
+
+@media screen and (max-width: 1200px) {
+  h4 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .benefits__number {
+    font-size: 56px;
+    line-height: 76px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .benefits__number {
+    display: block;
+  }
+  .benefits__item {
+    h4 {
+      margin-bottom: 16px;
+    }
+  }
+}
+@media screen and (max-width: 760px){
+  .benefits__wrapper{
+    flex-direction: column;
+  }
+.benefits__number{
+  display: unset;
+}
 }

@@ -25,25 +25,47 @@ class Camp {
 // SLIDER
 
 const swiperCamp = new Swiper(".swiper-camps", {
-  slidesPerView: 3.5,
+  // centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    400: {
+      slidesPerView: 1.4,
+      spaceBetween: 20,
+    },
+    650: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 3.5,
+      spaceBetween: 40,
+    },
   },
 });
 const swiperAbout = new Swiper(".swiper-review", {
   slidesPerView: 1,
+  spaceBetween: 20,
+
   pagination: {
     el: ".swiper-pagination",
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
 // Slider
-
-
 
 function accordion(selector) {
   const acc = document.querySelectorAll("." + selector);
@@ -61,7 +83,6 @@ function accordion(selector) {
   });
 }
 accordion("accordion__btn");
-
 
 // burger__menu
 
@@ -109,4 +130,4 @@ function burgerMenu(burgerBtnSelector, navMenuSelector, linksSelector) {
   });
 }
 
-burgerMenu('nav__burger-menu', 'nav__menu', 'nav__link')
+burgerMenu("nav__burger-menu", "nav__menu", "nav__link");
