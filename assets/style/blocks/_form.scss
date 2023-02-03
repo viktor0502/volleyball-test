@@ -40,10 +40,10 @@
         height: 20px;
       }
     }
-    a{
-        color: $blue-hard;
-        text-decoration: underline;
-        padding-left: 5px;
+    a {
+      color: $blue-hard;
+      text-decoration: underline;
+      padding-left: 5px;
     }
   }
   button {
@@ -75,29 +75,95 @@
   }
 }
 @keyframes hello {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
-.hello-img{
+.hello-img {
   position: absolute;
   width: fit-content;
   top: 120px;
   right: 150px;
-  img{
-    &#hand{
+  img {
+    &#hand {
       width: 3vw;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    &#hello{
+    &#hello {
       animation: hello 20s infinite linear;
     }
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .hello-img {
+    top: 60px;
+    right: 70px;
+    img {
+      &#hello {
+        width: 119px;
+      }
+    }
+  }
+  .form-section__title {
+    p {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.16em;
+    }
+  }
+  .form-section {
+    padding: 85px 0 100px;
+    label {
+      &:not(:nth-child(3)) {
+        input {
+          padding: 13px 16px;
+        }
+      }
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .hello-img {
+    top: 20px;
+    right: 20px;
+  }
+  .form-section {
+    form {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+  .form-section__title {
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .form-section__title {
+    h2 {
+      max-width: 60%;
+    }
+  }
+  .form-section {
+    label {
+      font-size: 14px;
+    }
+    button {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 12px 24px;
+      max-width: fit-content;
+    }
+  }
+}

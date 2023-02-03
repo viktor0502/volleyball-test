@@ -1,0 +1,52 @@
+.breadcrumbs {
+    padding: 52px 0;
+    font-family: Hebrew, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $blue-hard;
+}
+.breadcrumbs__list {
+    display: flex;
+    gap: 20px;
+    li:not(:last-child) {
+        &::after {
+            content: "/";
+            padding-left: 20px;
+            color: $black-color;
+        }
+    }
+}
+.active-page {
+    color: $black-color;
+}
+.politic {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    h1{
+        font-size: 42px;
+        line-height: 57px;
+        letter-spacing: 0.17em;
+    }
+}
+.politic__item {
+}
+.politic__title {
+    font-size: 32px;
+line-height: 44px;
+margin-bottom: 32px;
+letter-spacing: 0.17em;
+}
+.politic__content {
+    p:not(:last-child) {
+        line-height: 1em;
+        margin-bottom: 1em;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+    }
+}

@@ -175,6 +175,11 @@
   .swiper-review {
     padding: 24px 0 42px;
   }
+  .accordion__btn{
+    p{
+      font-size: 14px;
+    }
+  }
 }
 @media screen and (max-width: 576px) {
   .review__title {

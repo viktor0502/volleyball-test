@@ -48,7 +48,7 @@
 }
 .coach__list {
   margin-top: 24px;
-  padding-bottom: 52px;
+  padding-bottom: 32px;
   row-gap: 24px;
   column-gap: 53px;
   display: flex;
@@ -74,7 +74,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 150px;
-  padding-top: 52px;
+  padding-top: 32px;
   row-gap: 24px;
   p {
     gap: 18px;
@@ -87,6 +87,13 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .coach{
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+  .coach__wrapper{
+    gap: 86px;
+  }
   .coach__name {
     font-size: 22px;
     line-height: 30px;
@@ -129,6 +136,7 @@
     }
   }
   .coach__list {
+    padding-top: 26px;
     li {
       font-size: 14px;
       line-height: 17px;
