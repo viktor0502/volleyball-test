@@ -171,7 +171,7 @@ main {
 
 .benefits {
   padding: 64px 0 84px;
-  background-image: url(/assets/img/camps/bg-palms.jpg);
+  background-image: url(/assets/img/camps/palms.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -251,7 +251,7 @@ main {
   }
 }
 .camps-slider {
-  background-image: url(/assets/img/camps/bg-palms.jpg);
+  background-image: url(/assets/img/camps/palms.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
