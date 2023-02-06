@@ -63,7 +63,7 @@
   &::after {
     content: "";
     flex-shrink: 0;
-    background: url(/assets/img/icons/Plus.svg);
+    background: url(../img/icons/Plus.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -74,7 +74,7 @@
     &::after {
       flex-shrink: 0;
       content: "";
-      background: url(/assets/img/icons/minus.svg);
+      background: url(../img/icons/minus.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;

@@ -118,8 +118,6 @@ main {
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.42);
-  -webkit-animation: btn-anim 2s linear infinite;
-          animation: btn-anim 2s linear infinite;
 }
 .btn:hover {
   transform: scale(1.03);
@@ -1423,7 +1421,7 @@ nav {
 .accordion__btn::after {
   content: "";
   flex-shrink: 0;
-  background: url(/assets/img/icons/Plus.svg);
+  background: url(../img/icons/Plus.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1433,7 +1431,7 @@ nav {
 .accordion__btn--active::after {
   flex-shrink: 0;
   content: "";
-  background: url(/assets/img/icons/minus.svg);
+  background: url(../img/icons/minus.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1587,6 +1585,18 @@ nav {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.05em;
+}
+.ad__wrapper .btn::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.42);
+  -webkit-animation: btn-anim 3s linear infinite;
+          animation: btn-anim 3s linear infinite;
 }
 
 .ad__title {
