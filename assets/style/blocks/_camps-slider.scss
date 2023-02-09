@@ -37,7 +37,6 @@
   letter-spacing: 0.11em;
   max-width: 60%;
   margin-top: 32px;
-  margin-bottom: 52px;
   span {
     color: $yellow-light;
   }
@@ -45,6 +44,10 @@
 .camps-item {
   max-width: 360px;
   background: #fff;
+  transition: $transition;
+  &:hover{
+    transform: translate(0, -40px);
+  }
 
   .btn {
     padding: 12px 24px;
@@ -75,6 +78,9 @@
 }
 .swiper-camps {
   padding-bottom: 80px;
+  .swiper-wrapper{
+    padding-top: 52px;
+  }
 }
 .swiper-pagination {
   text-align: start;

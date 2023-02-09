@@ -101,6 +101,13 @@ main {
   justify-content: space-between;
 }
 
+.scale {
+  transition: transform 0.2s;
+}
+.scale:hover {
+  transform: scale(1.1);
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -120,7 +127,7 @@ main {
   background: rgba(255, 255, 255, 0.42);
 }
 .btn:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
 }
 
 .btn-yellow {
@@ -288,7 +295,6 @@ main {
   letter-spacing: 0.11em;
   max-width: 60%;
   margin-top: 32px;
-  margin-bottom: 52px;
 }
 .camps-slider__descr span {
   color: #ffce18;
@@ -297,6 +303,10 @@ main {
 .camps-item {
   max-width: 360px;
   background: #fff;
+  transition: 0.2s;
+}
+.camps-item:hover {
+  transform: translate(0, -40px);
 }
 .camps-item .btn {
   padding: 12px 24px;
@@ -332,6 +342,9 @@ main {
 .swiper-camps {
   padding-bottom: 80px;
 }
+.swiper-camps .swiper-wrapper {
+  padding-top: 52px;
+}
 
 .swiper-pagination {
   text-align: start;
@@ -342,7 +355,7 @@ main {
   border-radius: 0;
   background: #fff;
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #ffce18;
@@ -1047,7 +1060,7 @@ nav {
 }
 
 .nav__link {
-  transition: 0.3s;
+  transition: 0.2s;
   font-size: 20px;
 }
 .nav__link:hover {
@@ -1214,7 +1227,7 @@ nav {
 }
 
 .nav__link {
-  transition: 0.3s;
+  transition: 0.2s;
   font-size: 20px;
 }
 .nav__link:hover {
@@ -1398,9 +1411,22 @@ nav {
 }
 
 .accordion {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.accordion__item {
+  transition: 0.2s;
+}
+.accordion__item:hover {
+  transform: scale(1.1);
 }
 
 .accordion__btn {
@@ -1507,7 +1533,7 @@ nav {
     padding: 80px 0 100px;
   }
   .accordion {
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
     gap: 18px;
   }
   .accordion__btn {
@@ -1688,6 +1714,7 @@ nav {
 .politic {
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
   gap: 52px;
 }
 .politic h1 {
