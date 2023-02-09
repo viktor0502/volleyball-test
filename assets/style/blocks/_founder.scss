@@ -4,16 +4,23 @@
   color: #fff;
   padding-top: 120px;
   position: relative;
-  &::before {
-    content: "";
-    background: url(/assets/img/founder/founder.png);
-    position: absolute;
-    left: 0px;
-    top: 120px;
-    width: 290px;
-    height: 285px;
-    background-size: contain;
-    background-repeat: no-repeat;
+  .container {
+    position: relative;
+    .founder__span {
+      position: absolute;
+      left: -100px;
+      top: -20px;
+      width: 290px;
+      height: 285px;
+      transform-origin: left bottom;
+      transform: rotate(-45deg) translateX(50%);
+      img {
+        width: 100%;
+      }
+      &.element-animation.element-show {
+        transform: unset;
+      }
+    }
   }
 }
 
@@ -64,19 +71,26 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .founder {
-    &::before {
-      width: 240px;
-      height: 225px;
+    .container {
+      .founder__span {
+        width: 240px;
+        height: 225px;
+        top: -20px;
+        left: -50px;
+      }
     }
   }
 }
 @media screen and (max-width: 1200px) {
   .founder {
     padding-top: 60px;
-    &::before {
-      top: -40px;
+    .container {
+      .founder__span {
+        top: -110px;
+        left: -50px;
+      }
     }
     img {
       width: 387px;
@@ -93,38 +107,50 @@
 @media screen and (max-width: 992px) {
   .founder {
     padding-top: 130px;
-    &::before{
-      left: 40%;
-      top: 0;
-      transform: rotate(20deg);
-
+    .container {
+      .founder__span {
+        left: 20%;
+        top: -40%;
+        &.element-animation {
+          transform-origin: bottom right;
+          transform: rotate(40deg);
+        }
+        &.element-animation.element-show {
+          transform: rotate(20deg);
+        }
+      }
     }
     img {
       width: 359px;
     }
   }
-  .founder__wrapper{
+  .founder__wrapper {
     gap: 30px;
   }
-  .founder__list{
+  .founder__list {
     font-size: 16px;
     gap: 24px;
     padding-bottom: 2em;
-
   }
 }
-@media screen and (max-width: 760px){
-  .founder__wrapper{
+@media screen and (max-width: 760px) {
+  .founder__wrapper {
     flex-direction: column;
   }
-  .founder{
+  .founder {
     padding-top: 150px;
-    img{
+    .container {
+      .founder__span {
+        left: 37%;
+        top: -23%;
+      }
+    }
+    img {
       width: 313px;
     }
-    &::before{
-      left: auto;
-      right: -30px;
-    }
+    // &::before {
+    //   left: auto;
+    //   right: -30px;
+    // }
   }
 }

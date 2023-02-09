@@ -1,5 +1,14 @@
 @import "./var";
 
+
+.element-animation{
+  opacity: 0;
+  &.element-show{
+    transition: 1s;
+    opacity: 1;
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -16,16 +25,7 @@
   padding: 16px 0;
   position: relative;
   transition: transform .4s;
-  &::after {
-    content: "";
-    width: 0;
-    height: 100%;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.42);
-  }
+  
   &:hover{
     transform: scale(1.03);
   }
@@ -41,12 +41,17 @@
 @keyframes btn-anim {
   0%{
     width: 0;
+    height: 0;
+    opacity: 0;
   }
   50%{
-    width: 100%;
+    width: 200%;
+    height: 200%;
+    opacity: 1;
   }
   100%{
-    width: 100%;
     opacity: 0;
+    width: 200%;
+    height: 200%;
   }
 }

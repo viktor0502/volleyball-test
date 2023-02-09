@@ -50,6 +50,10 @@ const swiperCamp = new Swiper(".swiper-camps", {
       slidesPerView: 3.5,
       spaceBetween: 40,
     },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    }
   },
 });
 const swiperAbout = new Swiper(".swiper-review", {
@@ -141,7 +145,7 @@ function onEntry(entry) {
     }
   });
 }
-let options = { threshold: [0.3] };
+let options = { threshold: [0.7] };
 let observer = new IntersectionObserver(onEntry, options);
 let observerCounter = new IntersectionObserver(counterEntry, options);
 let elements = document.querySelectorAll(".element-animation");
