@@ -22,6 +22,9 @@
       flex-direction: column-reverse;
       gap: 12px;
       input {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
         padding: 20px 16px;
         &::placeholder {
           font-weight: 400;

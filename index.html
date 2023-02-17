@@ -14,32 +14,28 @@
   <body>
     <header>
       <nav>
-        <div class="container">
-          <div class="nav__wrapper align-center flex space-between">
-            <a href="#" class="nav__logo">
-              <img src="./assets/img/header/Logo.svg" alt="Logo" />
-            </a>
-            <div class="nav__menu flex align-center space-between">
-              <ul class="nav__list align-center flex">
-                <li><a href="#" class="nav__link">О нас</a></li>
-                <li><a href="#" class="nav__link">Тренера</a></li>
-                <li><a href="#" class="nav__link">Тренировки</a></li>
-                <li><a href="#" class="nav__link">Кемпы</a></li>
-                <li><a href="#" class="nav__link">Отзывы</a></li>
-                <li><a href="#" class="nav__link">Вопросы</a></li>
-              </ul>
-              <a
-                href="tel:+79526329365"
-                class="nav__contacts nav__link align-center flex"
-                ><img
-                  src="./assets/img/icons/Call.svg"
-                  alt="Call"
-                />+7 952 632-93-65</a
-              >
-            </div>
-            <div class="nav__burger-menu">
-              <span></span>
-            </div>
+        <div class="container nav__wrapper">
+          <a href="#" class="nav__logo">
+            <img src="./assets/img/header/Logo.svg" alt="Logo" />
+          </a>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li><a href="#" class="nav__link">О нас</a></li>
+              <li><a href="#" class="nav__link">Тренера</a></li>
+              <li><a href="#" class="nav__link">Тренировки</a></li>
+              <li><a href="#" class="nav__link">Кемпы</a></li>
+              <li><a href="#" class="nav__link">Отзывы</a></li>
+              <li><a href="#" class="nav__link">Вопросы</a></li>
+            </ul>
+            <a href="tel:+79526329365" class="nav__contacts"
+              ><img
+                src="./assets/img/icons/Call.svg"
+                alt="Call"
+              />+7 952 632-93-65</a
+            >
+          </div>
+          <div class="nav__burger-menu">
+            <span></span>
           </div>
         </div>
       </nav>
@@ -79,14 +75,18 @@
           <div class="benefits__wrapper">
             <div class="benefits__item">
               <h4 class="benefits_title">
-                <span id="years" class="benefits__number element-animation">8</span>
+                <span id="years" class="benefits__number element-animation"
+                  >8</span
+                >
                 лет
               </h4>
               <p class="benefits__descr">Существования школы ATM</p>
             </div>
             <div class="benefits__item">
               <h4 class="benefits_title">
-                <span id="trains" class="benefits__number element-animation">5000</span>
+                <span id="trains" class="benefits__number element-animation"
+                  >5000</span
+                >
                 тренировок
               </h4>
               <p class="benefits__descr">
@@ -96,7 +96,9 @@
             </div>
             <div class="benefits__item">
               <h4 class="benefits_title">
-                <span id="students" class="benefits__number element-animation">300</span>
+                <span id="students" class="benefits__number element-animation"
+                  >300</span
+                >
                 учеников
               </h4>
               <p class="benefits__descr">Тренировки для любого уровня</p>
@@ -106,7 +108,9 @@
       </section>
       <section class="founder">
         <div class="container">
-          <span class="founder__span element-animation"><img src="./assets/img/founder/founder.png" alt="founder"></span>
+          <span class="founder__span element-animation"
+            ><img src="./assets/img/founder/founder.png" alt="founder"
+          /></span>
           <div class="founder__wrapper">
             <div class="founder__title">
               <h2>Гаик Атмачьян</h2>
@@ -245,27 +249,29 @@
         </div>
       </section>
       <section class="video">
-        <div class="video__wrapper">
-          <p>
-            Мы составим
-            <span class="yellow-span">индивидуальный график тренировок</span>
-            для вас — подберем удобное время и место. На индивидуальной
-            тренировке
-            <span class="black-span">все внимание только к вам</span>: подтянем
-            нужные элементы, изучим недостающие навыки, исправим ошибки,
-            разберем интересующие темы. Занятия один на один с тренером подойдут
-            всем уровням: от
-            <span class="blue-span">начинающих игроков</span> до
-            <span class="blue-span">профессиональных спортсменов</span>.
+        <video
+          autoplay
+          muted
+          loop
+          preload="metadata"
+          src="./assets/video/tren_new logo.mp4"
+        ></video>
+        <div class="video__content">
+          <h5 class="video__title">Виды тренировок</h5>
+          <span class="video__line"></span>
+          <p class="video__text">
+            <span class="yellow-span">Индивидуальные тренировки</span> проходят
+            один на один с тренером —
+            <span class="black-span">все внимание</span> на занятии
+            <span class="black-span">только к вам.</span> Место и время
+            тренировок подбираем по вашим пожеланиям.
+            <span class="blue-span">Групповые тренировки</span> — занятия в
+            мини-группе до 6 человек одного уровня подготовки. Есть смешанные,
+            мужские и женские группы.. Для
+            <span class="blue-span">корпоративных клиентов</span> проводим
+            тренировки, турниры, корпоративы.
           </p>
         </div>
-        <iframe
-          src="https://www.youtube.com/embed/K1rZkTb9QFI?control=0&mute=1&autoplay=1&showinfo=0&loop==1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
       </section>
       <section class="ad__block">
         <div class="container">
@@ -441,7 +447,7 @@
           <h2>Частые вопросы</h2>
           <div class="accordion">
             <div class="accordion__wrapper">
-              <div class="accordion__item ">
+              <div class="accordion__item">
                 <div class="accordion__btn align-center flex">
                   <p>
                     Какие люди к нам обращаются, сколько им лет, какие у них
@@ -451,12 +457,12 @@
                 <div class="accordion__content">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Distinctio, aliquid et id atque laudantium vero sunt corporis!
-                    Sapiente maiores ad nulla sunt possimus ipsam perspiciatis
-                    consequuntur fuga corrupti, nostrum soluta, iste alias in
-                    accusamus reiciendis porro repudiandae. Hic quidem saepe,
-                    sapiente ullam, voluptate esse neque explicabo labore
-                    asperiores, culpa officiis?
+                    Distinctio, aliquid et id atque laudantium vero sunt
+                    corporis! Sapiente maiores ad nulla sunt possimus ipsam
+                    perspiciatis consequuntur fuga corrupti, nostrum soluta,
+                    iste alias in accusamus reiciendis porro repudiandae. Hic
+                    quidem saepe, sapiente ullam, voluptate esse neque explicabo
+                    labore asperiores, culpa officiis?
                   </p>
                 </div>
               </div>
@@ -470,12 +476,12 @@
                 <div class="accordion__content">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Distinctio, aliquid et id atque laudantium vero sunt corporis!
-                    Sapiente maiores ad nulla sunt possimus ipsam perspiciatis
-                    consequuntur fuga corrupti, nostrum soluta, iste alias in
-                    accusamus reiciendis porro repudiandae. Hic quidem saepe,
-                    sapiente ullam, voluptate esse neque explicabo labore
-                    asperiores, culpa officiis?
+                    Distinctio, aliquid et id atque laudantium vero sunt
+                    corporis! Sapiente maiores ad nulla sunt possimus ipsam
+                    perspiciatis consequuntur fuga corrupti, nostrum soluta,
+                    iste alias in accusamus reiciendis porro repudiandae. Hic
+                    quidem saepe, sapiente ullam, voluptate esse neque explicabo
+                    labore asperiores, culpa officiis?
                   </p>
                 </div>
               </div>
@@ -489,74 +495,74 @@
                 <div class="accordion__content">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Distinctio, aliquid et id atque laudantium vero sunt corporis!
-                    Sapiente maiores ad nulla sunt possimus ipsam perspiciatis
-                    consequuntur fuga corrupti, nostrum soluta, iste alias in
-                    accusamus reiciendis porro repudiandae. Hic quidem saepe,
-                    sapiente ullam, voluptate esse neque explicabo labore
-                    asperiores, culpa officiis?
+                    Distinctio, aliquid et id atque laudantium vero sunt
+                    corporis! Sapiente maiores ad nulla sunt possimus ipsam
+                    perspiciatis consequuntur fuga corrupti, nostrum soluta,
+                    iste alias in accusamus reiciendis porro repudiandae. Hic
+                    quidem saepe, sapiente ullam, voluptate esse neque explicabo
+                    labore asperiores, culpa officiis?
                   </p>
                 </div>
               </div>
             </div>
             <div class="accordion__wrapper">
               <div class="accordion__item">
-              <div class="accordion__btn align-center flex">
-                <p>
-                  Какие люди к нам обращаются, сколько им лет, какие у них
-                  увлечения?
-                </p>
+                <div class="accordion__btn align-center flex">
+                  <p>
+                    Какие люди к нам обращаются, сколько им лет, какие у них
+                    увлечения?
+                  </p>
+                </div>
+                <div class="accordion__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio, aliquid et id atque laudantium vero sunt
+                    corporis! Sapiente maiores ad nulla sunt possimus ipsam
+                    perspiciatis consequuntur fuga corrupti, nostrum soluta,
+                    iste alias in accusamus reiciendis porro repudiandae. Hic
+                    quidem saepe, sapiente ullam, voluptate esse neque explicabo
+                    labore asperiores, culpa officiis?
+                  </p>
+                </div>
               </div>
-              <div class="accordion__content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Distinctio, aliquid et id atque laudantium vero sunt corporis!
-                  Sapiente maiores ad nulla sunt possimus ipsam perspiciatis
-                  consequuntur fuga corrupti, nostrum soluta, iste alias in
-                  accusamus reiciendis porro repudiandae. Hic quidem saepe,
-                  sapiente ullam, voluptate esse neque explicabo labore
-                  asperiores, culpa officiis?
-                </p>
+              <div class="accordion__item">
+                <div class="accordion__btn align-center flex">
+                  <p>
+                    Какие люди к нам обращаются, сколько им лет, какие у них
+                    увлечения?
+                  </p>
+                </div>
+                <div class="accordion__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio, aliquid et id atque laudantium vero sunt
+                    corporis! Sapiente maiores ad nulla sunt possimus ipsam
+                    perspiciatis consequuntur fuga corrupti, nostrum soluta,
+                    iste alias in accusamus reiciendis porro repudiandae. Hic
+                    quidem saepe, sapiente ullam, voluptate esse neque explicabo
+                    labore asperiores, culpa officiis?
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="accordion__item">
-              <div class="accordion__btn align-center flex">
-                <p>
-                  Какие люди к нам обращаются, сколько им лет, какие у них
-                  увлечения?
-                </p>
+              <div class="accordion__item">
+                <div class="accordion__btn align-center flex">
+                  <p>
+                    Какие люди к нам обращаются, сколько им лет, какие у них
+                    увлечения?
+                  </p>
+                </div>
+                <div class="accordion__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio, aliquid et id atque laudantium vero sunt
+                    corporis! Sapiente maiores ad nulla sunt possimus ipsam
+                    perspiciatis consequuntur fuga corrupti, nostrum soluta,
+                    iste alias in accusamus reiciendis porro repudiandae. Hic
+                    quidem saepe, sapiente ullam, voluptate esse neque explicabo
+                    labore asperiores, culpa officiis?
+                  </p>
+                </div>
               </div>
-              <div class="accordion__content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Distinctio, aliquid et id atque laudantium vero sunt corporis!
-                  Sapiente maiores ad nulla sunt possimus ipsam perspiciatis
-                  consequuntur fuga corrupti, nostrum soluta, iste alias in
-                  accusamus reiciendis porro repudiandae. Hic quidem saepe,
-                  sapiente ullam, voluptate esse neque explicabo labore
-                  asperiores, culpa officiis?
-                </p>
-              </div>
-            </div>
-            <div class="accordion__item">
-              <div class="accordion__btn align-center flex">
-                <p>
-                  Какие люди к нам обращаются, сколько им лет, какие у них
-                  увлечения?
-                </p>
-              </div>
-              <div class="accordion__content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Distinctio, aliquid et id atque laudantium vero sunt corporis!
-                  Sapiente maiores ad nulla sunt possimus ipsam perspiciatis
-                  consequuntur fuga corrupti, nostrum soluta, iste alias in
-                  accusamus reiciendis porro repudiandae. Hic quidem saepe,
-                  sapiente ullam, voluptate esse neque explicabo labore
-                  asperiores, culpa officiis?
-                </p>
-              </div>
-            </div>
             </div>
           </div>
         </div>
@@ -584,14 +590,19 @@
               ><input
                 type="tel"
                 name="tel"
+                id="phone"
                 placeholder="Введите Ваш номер телефона"
                 required
               />Номер телефона</label
             >
             <label for="politic"
-              ><input type="checkbox" required name="politic" /><span>Согласен с
-                правилами <a href="html/privacy.html"> политики конфиденциальности</a></label
-              ></span>
+              ><input type="checkbox" required name="politic" /><span
+                >Согласен с правилами
+                <a href="html/privacy.html">
+                  политики конфиденциальности</a
+                ></span
+              ></label
+            >
             <button type="submit" class="btn btn-blue">Отправить заявку</button>
           </form>
         </div>
@@ -601,13 +612,12 @@
     <footer>
       <div class="footer__nav">
         <div class="container">
-          
-          <div class="nav__wrapper align-center flex space-between">
+          <div class="nav__wrapper">
             <a href="#" class="nav__logo">
               <img src="./assets/img/header/Logo.svg" alt="Logo" />
             </a>
-            <div class="nav__menu flex align-center space-between">
-              <ul class="nav__list align-center flex">
+            <div class="nav__menu ">
+              <ul class="nav__list">
                 <li><a href="#" class="nav__link">О нас</a></li>
                 <li><a href="#" class="nav__link">Тренера</a></li>
                 <li><a href="#" class="nav__link">Тренировки</a></li>
@@ -616,17 +626,30 @@
                 <li><a href="#" class="nav__link">Вопросы</a></li>
               </ul>
               <div class="nav__social-links">
-                <a href="#"><img src="assets/img/icons/whatsapp.svg" alt="whatsapp"></a>
-                <a href="#"><img src="assets/img/icons/tg.svg" alt="telegram"></a>
+                <a href="#"
+                  ><img src="assets/img/icons/whatsapp.svg" alt="whatsapp"
+                /></a>
+                <a href="#"
+                  ><img src="assets/img/icons/tg.svg" alt="telegram"
+                /></a>
               </div>
-            </div>
-            <div class="nav__burger-menu">
-              <span></span>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+      integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>

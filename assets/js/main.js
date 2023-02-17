@@ -184,3 +184,7 @@ function commonCounter() {
   counter(5000, "#trains", 50);
   counter(300, "#students", 10);
 }
+
+jQuery(function($){
+  $("#phone").mask("+7(999) 999-9999");
+});
