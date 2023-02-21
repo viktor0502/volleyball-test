@@ -110,7 +110,7 @@
     .container {
       .founder__span {
         left: 20%;
-        top: -40%;
+        top: -30%;
         &.element-animation {
           transform-origin: bottom right;
           transform: rotate(40deg);
@@ -141,16 +141,12 @@
     padding-top: 150px;
     .container {
       .founder__span {
-        left: 37%;
-        top: -23%;
+        left: 25%;
+        top: -17%;
       }
     }
     img {
       width: 313px;
     }
-    // &::before {
-    //   left: auto;
-    //   right: -30px;
-    // }
   }
 }

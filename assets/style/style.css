@@ -947,7 +947,7 @@ main {
   }
   .founder .container .founder__span {
     left: 20%;
-    top: -40%;
+    top: -30%;
   }
   .founder .container .founder__span.element-animation {
     transform-origin: bottom right;
@@ -976,8 +976,8 @@ main {
     padding-top: 150px;
   }
   .founder .container .founder__span {
-    left: 37%;
-    top: -23%;
+    left: 25%;
+    top: -17%;
   }
   .founder img {
     width: 313px;
