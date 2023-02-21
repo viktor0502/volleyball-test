@@ -45,7 +45,7 @@
   max-width: 360px;
   background: #fff;
   transition: $transition;
-  &:hover{
+  &:hover {
     transform: translate(0, -40px);
   }
 
@@ -72,13 +72,12 @@
   letter-spacing: 0.11em;
   color: $black-color;
 }
-.container--right{
+.container--right {
   margin-left: calc((100vw - 1240px) / 2);
-
 }
 .swiper-camps {
   padding-bottom: 80px;
-  .swiper-wrapper{
+  .swiper-wrapper {
     padding-top: 52px;
   }
 }
@@ -97,45 +96,87 @@
     }
   }
 }
-@media screen and (max-width: 1400px){
-  .container--right{
+@media screen and (max-width: 1400px) {
+  .container--right {
     margin-left: calc((100vw - 1140px) / 2);
   }
 }
-@media screen and (max-width: 1200px){
-  .container--right{
+@media screen and (max-width: 1200px) {
+  .camps-slider {
+    padding: 62px 0 80px;
+  }
+  .container--right {
     margin-left: calc((100vw - 960px) / 2);
   }
-}
-@media screen and (max-width: 992px){
-  .container--right{
-    margin-left: calc((100vw - 720px) / 2);
+  .camps-slider__title {
+    h2 {
+      font-size: 30px;
+      line-height: 41px;
+      letter-spacing: 0.17em;
+    }
+  }
+  .camps-slider__btns {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.17em;
+  }
+  .camps-slider__descr {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .camps-item__date {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .camps-item__location {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .camps-item {
+    .btn {
+      margin-top: 24px;
+    }
   }
 }
-@media screen and (max-width: 760px){
-  .camps-slider__title{
+@media screen and (max-width: 992px) {
+  .container--right {
+    margin-left: calc((100vw - 720px) / 2);
+  }
+  .swiper-camps {
+    .swiper-wrapper {
+      padding-top: 42px;
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .camps-slider__title {
     flex-direction: column;
     align-items: unset;
-    .camps-slider__btns{
+    .camps-slider__btns {
       order: -1;
       margin-bottom: 54px;
     }
   }
-  .camps-slider__descr{
+  .camps-slider__descr {
     margin-top: 18px;
     max-width: unset;
   }
-  .container--right{
+  .container--right {
     margin-left: calc((100vw - 540px) / 2);
   }
 }
-@media screen and (max-width: 576px){
-  .container--right{
+@media screen and (max-width: 576px) {
+  .container--right {
     margin-left: unset;
     max-width: 100%;
+    padding: 0 0 0 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 385px) {
+  .container--right {
     padding: 0 15px;
-    display: flex; justify-content: center; 
-    .swiper-wrapper{
-    }
   }
 }

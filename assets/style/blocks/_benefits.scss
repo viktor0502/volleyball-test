@@ -76,11 +76,17 @@
     }
   }
 }
-@media screen and (max-width: 760px){
-  .benefits__wrapper{
+@media screen and (max-width: 760px) {
+  .benefits__wrapper {
     flex-direction: column;
   }
-.benefits__number{
-  display: unset;
+  .benefits__number {
+    display: unset;
+  }
 }
+@media screen and (max-width: 560px){
+  .benefits{
+    background-attachment: unset;
+    background-size: fill;
+  }
 }

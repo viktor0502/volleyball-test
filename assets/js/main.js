@@ -35,7 +35,7 @@ const swiperCamp = new Swiper(".swiper-camps", {
       spaceBetween: 0,
     },
     400: {
-      slidesPerView: 1.4,
+      slidesPerView: 1.5,
       spaceBetween: 20,
     },
     650: {

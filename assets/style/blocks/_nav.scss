@@ -174,3 +174,16 @@ nav {
     }
   }
 }
+@media screen and (max-width: 560px){
+  nav{
+    padding: 10px 0;
+  }
+  .nav__logo{
+    display: inline-block;
+    img{
+      max-height: 50px;
+
+
+    }
+  }
+}

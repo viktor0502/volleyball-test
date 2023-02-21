@@ -76,6 +76,11 @@
 }
 @media screen and (max-width: 992px){
     .camp-form-section{
+        .form-section__title{
+            h2{
+                max-width: unset;
+            }
+        }
         .container{
             display: flex;
             flex-direction: column;
@@ -88,7 +93,6 @@
             margin-top: 32px;
     }
     .camp-form-section{
-        
         .camp-form-section__wrapper{
             max-width: unset;
         }
