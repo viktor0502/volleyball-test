@@ -1,0 +1,191 @@
+.schedule {
+    margin-bottom: 200px;
+}
+.schedule__wrapper {
+    flex-wrap: wrap;
+    gap: 12px;
+    min-height: fit-content;
+    height: fit-content;
+
+    .swiper-slide {
+        flex: 1 1 21%;
+        min-height: max-content;
+        padding: 0 0 10px;
+    }
+}
+
+.schedule__item {
+    position: relative;
+    min-height: max-content;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+.schedule-item__text {
+    position: relative;
+    padding: 32px 14px 24px;
+    background: #fff;
+    font-family: "Open Sans Hebrew Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.17em;
+    color: #6f7578;
+    flex: 1 1 100%;
+    height: auto;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p{
+        flex: 1 1 50%;
+    }
+    svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    b {
+        font-family: "Open Sans Hebrew Condensed", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        color: $black-color;
+        display: block;
+        margin-bottom: 12px;
+    }
+    span {
+        display: block;
+        margin-bottom: 16px;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 30px;
+        color: $black-color;
+    }
+}
+.schedule-item__day {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    background: $blue-hard;
+    &.rest-day {
+        background: $yellow-light;
+    }
+    &.final-day {
+        background: $black-color;
+    }
+}
+
+.camp-faq {
+    padding: 0 0 200px;
+}
+@media screen and (max-width: 1400px) {
+    .swiper-schedule {
+        .swiper-slide {
+            min-height: 409px;
+            height: auto;
+            max-height: 100%;
+        }
+    }
+    .schedule-item__text{
+        span{
+            font-size: 18px;
+line-height: 25px;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .camp-faq {
+        padding: 0 0 150px;
+    }
+    .schedule {
+        margin-bottom: 150px;
+    }
+    .schedule__wrapper {
+    }
+    .schedule__item {
+    }
+    .schedule-item__day {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .schedule-item__text {
+    }
+}
+@media screen and (max-width: 992px) {
+    .camp-faq {
+        padding: 0 0 100px;
+    }
+    .schedule {
+        margin-bottom: 100px;
+    }
+    .schedule__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+        .swiper-slide {
+            max-width: 33%;
+            flex: 1 1 30%;
+            &:nth-last-child(1),
+            &:nth-last-child(2) {
+                flex: 1 1 45%;
+                max-width: 50%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 760px) {
+    .schedule {
+        margin-bottom: 80px;
+    }
+    .camp-faq {
+        padding: 0 0 80px;
+    }
+    .swiper-schedule {
+        overflow: hidden;
+        position: relative;
+
+        .swiper-wrapper {
+            margin-bottom: 24px;
+            .swiper-slide {
+                max-height: 354px;
+            }
+        }
+        .swiper-pagination {
+            bottom: 0;
+            .swiper-pagination-bullet {
+                max-width: 28px;
+                background: #fff;
+                border-radius: 26px 26px 0 0;
+                &-active {
+                    max-width: 43px;
+                    background: $blue-hard;
+                }
+            }
+        }
+    }
+    .schedule__wrapper {
+        flex-wrap: nowrap;
+        justify-content: unset;
+        gap: 0;
+        .swiper-slide {
+            flex: 1 0 100%;
+            width: 100%;
+            max-width: 100%;
+            &:nth-last-child(1),
+            &:nth-last-child(2) {
+                flex: 1 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}

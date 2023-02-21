@@ -1,0 +1,160 @@
+.camp-video {
+    padding: 200px 0 130px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 90px;
+    }
+    video {
+        max-width: 738px;
+        width: 100%;
+    }
+}
+.camp-video__text {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 65px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.camp-ad-block {
+    background: url(../img/camps/palms.jpg) no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    .btn-yellow {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        max-width: 346px;
+        width: 100%;
+        padding: 31px 0;
+    }
+}
+.camp-ad-block__text {
+    h3 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        margin-bottom: 24px;
+    }
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.11em;
+        color: #ffffff;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .camp-video {
+        video {
+            max-width: 60%;
+        }
+    }
+    .camp-ad-block {
+        .container {
+            gap: 100px;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .camp-video {
+        padding: 150px 0 90px;
+    }
+    .camp-video__text {
+        font-size: 30px;
+        line-height: 41px;
+    }
+    .camp-ad-block {
+        .btn-yellow {
+            padding: 24px 0;
+            font-size: 20px;
+            line-height: 27px;
+            max-width: 279px;
+        }
+    }
+    .camp-ad-block__text {
+        h3 {
+            font-size: 30px;
+            line-height: 41px;
+            letter-spacing: 0.11em;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.11em;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .camp-video {
+        padding: 100px 0 50px;
+        video {
+            max-width: 400px;
+        }
+    }
+    .camp-video__text {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .camp-ad-block {
+        padding: 51px 0;
+        .btn-yellow {
+            padding: 16px 0;
+            max-width: 239px;
+        }
+    }
+    .camp-ad-block__text {
+        h3 {
+            font-size: 22px;
+            line-height: 30px;
+            letter-spacing: 0.11em;
+        }
+        p {
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.11em;
+        }
+    }
+}
+@media screen and (max-width: 760px) {
+    .camp-video {
+        padding: 80px 0 32px;
+        .container {
+            flex-direction: column;
+            gap: 32px;
+        }
+        .camp-video__text {
+            text-align: center;
+        }
+    }
+    .camp-ad-block{
+        padding: 43px 0;
+        .container{
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+}

@@ -1,21 +1,27 @@
-@import './base/normalize';
-@import './base/var';
-@import './base/classes';
-@import './blocks/about';
-@import './blocks/benefits';
-@import './blocks/camps-slider';
-@import './blocks/coach';
-@import './blocks/footer';
-@import './blocks/form';
-@import './blocks/founder';
-@import './blocks/header';
-@import './blocks/nav';
-@import './blocks/nav';
-@import './blocks/reviews';
-@import './blocks/trainings';
-@import './blocks/video';
-@import './blocks/politic';
-
+@import "./base/normalize";
+@import "./base/var";
+@import "./base/classes";
+@import "./blocks/about";
+@import "./blocks/benefits";
+@import "./blocks/camps-slider";
+@import "./blocks/coach";
+@import "./blocks/footer";
+@import "./blocks/form";
+@import "./blocks/founder";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/nav";
+@import "./blocks/reviews";
+@import "./blocks/trainings";
+@import "./blocks/video";
+@import "./blocks/politic";
+@import "./camp/camp-header";
+@import "./camp/camp-trainers";
+@import "./camp/camp-video";
+@import "./camp/camp-programm";
+@import "./camp/camp-package";
+@import "./camp/camp-schedule";
+@import "./camp/camp-form-section";
 
 .container {
   max-width: 1240px;
@@ -23,32 +29,28 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .container{
-    max-width: 	1140px;
+  .container {
+    max-width: 1140px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .container{
-    max-width: 	960px;
+  .container {
+    max-width: 960px;
   }
 }
 @media screen and (max-width: 992px) {
-  .container{
-    max-width: 	720px;
+  .container {
+    max-width: 720px;
   }
 }
 @media screen and (max-width: 760px) {
-  .container{
-    max-width: 	540px;
+  .container {
+    max-width: 540px;
   }
 }
 @media screen and (max-width: 576px) {
-  .container{
-    max-width: 	100%;
+  .container {
+    max-width: 100%;
     padding: 0 15px;
   }
 }
-
-
-
-

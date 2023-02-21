@@ -23,7 +23,7 @@ class Camp {
 }
 
 // SLIDER
-
+console.log(document.querySelector('.swiper-camps'))
 const swiperCamp = new Swiper(".swiper-camps", {
   // centeredSlides: true,
   pagination: {
@@ -66,6 +66,24 @@ const swiperAbout = new Swiper(".swiper-review", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+const swiperSchedule = new Swiper(".swiper-schedule", {
+  // centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+      allowTouchMove: true,
+    },
+    767: {
+      slidesPerView: 8,
+      spaceBetween: 12,
+      allowTouchMove: false,
+    }
   },
 });
 

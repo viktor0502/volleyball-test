@@ -1,0 +1,172 @@
+.package {
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 200px;
+    img {
+        max-width: 300px;
+    }
+    .btn-yellow {
+        font-family: "Open Sans Condensed", sans-serif;
+        max-width: 362px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        padding: 24px 0;
+        margin-bottom: 20px;
+    }
+}
+.package__content {
+    padding: 52px 65px;
+    background: #fff;
+    flex: 1 1 auto;
+    font-family: "Open Sans Hebrew Condensed", sans-serif;
+    small {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.1rem;
+        color: #6f7578;
+    }
+}
+.package__title {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 57px;
+    letter-spacing: 0.1rem;
+    color: #0a0e17;
+    margin-bottom: 24px;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+.package__title--package::after {
+    content: " –";
+}
+.package__title--price {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 57px;
+    letter-spacing: 0.1em;
+    color: #0059ff;
+    &::after {
+        content: "*";
+    }
+}
+.package__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    color: #0a0e17;
+    margin-bottom: 52px;
+}
+.quote {
+    margin-bottom: 200px;
+    background: url(../img/sport_package/package-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    p {
+        font-family: Condensed;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        max-width: 1124px;
+        margin: 0 auto;
+        padding: 117px 0;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .package__content {
+        padding: 42px 32px;
+    }
+    .package__title,
+    .package__title--price {
+        font-size: 30px;
+        line-height: 41px;
+        letter-spacing: 0.1rem;
+    }
+    .package__text {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+    }
+    .package {
+        .btn-yellow {
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+            max-width: 213px;
+            padding: 20px 0;
+        }
+        small {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.1em;
+        }
+        img {
+            max-width: 264px;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .quote {
+        margin-bottom: 150px;
+        p {
+            font-size: 30px;
+            line-height: 46px;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .quote {
+        // background-position: ;
+        margin-bottom: 100px;
+        p {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .package {
+        img {
+            max-width: 204px;
+        }
+        small {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.1em;
+        }
+    }
+    .package__title--package::after {
+        content: "";
+    }
+    .package__title--price {
+        display: block;
+    }
+    .package__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+    }
+}
+@media screen and (max-width: 760px) {
+    .quote {
+        margin-bottom: 80px;
+        p {
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+    .package {
+        display: none;
+    }
+}
+@media screen and (max-width: 560px){
+    .quote{
+        background-position: 50%;
+    }
+}

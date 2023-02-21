@@ -87,21 +87,16 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .coach{
+  .coach {
     padding-top: 70px;
     padding-bottom: 100px;
   }
-  .coach__wrapper{
+  .coach__wrapper {
     gap: 86px;
   }
   .coach__name {
     font-size: 22px;
     line-height: 30px;
-  }
-  .coach__img {
-    img {
-      width: 165px;
-    }
   }
   .coach__item:first-child {
     .coach__address {
@@ -118,8 +113,6 @@
     .coach__img {
       grid-column: 1/2;
       grid-row: 1/2;
-      
-      width: fit-content;
     }
     .coach__name {
       grid-column: 2/3;

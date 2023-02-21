@@ -1,9 +1,8 @@
 @import "./var";
 
-
-.element-animation{
+.element-animation {
   opacity: 0;
-  &.element-show{
+  &.element-show {
     transition: 1s;
     opacity: 1;
   }
@@ -18,9 +17,9 @@
 .space-between {
   justify-content: space-between;
 }
-.scale{
+.scale {
   transition: transform $transition;
-  &:hover{
+  &:hover {
     transform: scale(1.1);
   }
 }
@@ -30,12 +29,11 @@
   align-items: center;
   padding: 16px 0;
   position: relative;
-  transition: transform .4s;
-  
-  &:hover{
+  transition: transform 0.4s;
+
+  &:hover {
     transform: scale(1.1);
   }
-  
 }
 .btn-yellow {
   color: $black-color;
@@ -46,19 +44,88 @@
   background: $blue-hard;
 }
 @keyframes btn-anim {
-  0%{
+  0% {
     width: 0;
     height: 0;
     opacity: 0;
   }
-  50%{
+  50% {
     width: 300%;
     height: 300%;
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
     width: 300%;
     height: 300%;
   }
 }
+.coach-img {
+  position: relative;
+  z-index: 3;
+  img {
+    position: relative;
+    z-index: 3;
+    border-radius: 100%;
+    width: 189px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -24px;
+    border-radius: 150.759px;
+    transform: rotate(35.98deg);
+    width: 190px;
+    height: 268px;
+    z-index: 2;
+  }
+  &.yellow-img {
+    &::before {
+      background: $yellow-light;
+    }
+  }
+  &.blue-img {
+    &::before {
+      background: $blue-hard;
+    }
+  }
+  &.black-img {
+    &::before {
+      background: $black-color;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .coach-img {
+    position: relative;
+    z-index: 3;
+    img {
+      width: 148px;
+    }
+    &::before {
+      top: -5px;
+      left: -18px;
+      width: 148px;
+      height: 209px;
+
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+   .coach-img {
+    position: relative;
+    z-index: 3;
+    img {
+      width: 100px;
+    }
+    &::before {
+      top: -4px;
+      left: -13px;
+      width: 100px;
+      height: 143px;
+
+    }
+  }
+}
+

@@ -1,0 +1,108 @@
+.camp-form-section {
+    position: relative;
+    form{
+        flex-direction: column;
+        width: 100%;
+    }
+    button {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
+        max-width: fit-content;
+        padding: 16px 24px;
+    }
+    label[for="politic"] {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.16em;
+        font-family: "Open Sans Hebrew Condensed", sans-serif;
+        color: #c2c2c2;
+        flex-direction: row;
+    }
+    
+    .form-section__title {
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            letter-spacing: 0.1em;
+            margin-bottom: 22px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.16em;
+        }
+    }
+}
+.camp-form-section__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 836px;
+    width: 50%;
+    img {
+        width: 100%;
+    }
+}
+.camp-form-section__wrapper {
+    max-width: 440px;
+}
+.inputs-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+}
+@media screen and (max-width: 1200px){
+    .camp-form-section{
+        padding: 40px 0 45px;
+        
+        button{
+            margin-top: 0;
+        }
+    }
+    .camp-form-section__img{
+        width: 45%;
+        
+    }
+    .inputs-wrapper{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 992px){
+    .camp-form-section{
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .camp-form-section__img{
+            position: static;
+            order: 3;
+            width: 100%;
+            margin-top: 32px;
+    }
+    .camp-form-section{
+        
+        .camp-form-section__wrapper{
+            max-width: unset;
+        }
+    }
+}
+@media screen and (max-width: 560px){
+    .camp-form-section{
+        label[for ="politic"]{
+            a{
+                padding-left: 0;
+            }
+        }
+    }
+    .inputs-wrapper{
+        flex-direction: column;
+    }
+}

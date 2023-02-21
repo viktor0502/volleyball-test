@@ -42,8 +42,7 @@
 }
 
 .accordion {
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
+
   gap: 28px;
   display: flex;
   justify-content: space-between;
@@ -58,6 +57,8 @@
   transition: $transition;
   &:hover{
     transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
+    
   }
 }
 .accordion__btn {
