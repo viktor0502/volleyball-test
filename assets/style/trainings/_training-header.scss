@@ -1,0 +1,38 @@
+.training-header__main{
+    max-height: 100vh;
+    margin-bottom: 200px;
+    width: 100%;
+    video{
+        width: 100%;
+        height: 100%;
+    }
+}
+.trainings-main{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+@media screen and (max-width: 1200px){
+    .training-header__main{
+        margin-bottom: 150px;
+    }
+    .trainings-main{
+        gap: 150px;
+    }
+}
+@media screen and (max-width: 992px){
+    .training-header__main{
+        margin-bottom: 100px;
+    }
+    .trainings-main{
+        gap: 100px;
+    }
+}
+@media screen and (max-width: 760px){
+    .training-header__main{
+        margin-bottom: 80px;
+    }
+    .trainings-main{
+        gap: 80px;
+    }
+}

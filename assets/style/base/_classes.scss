@@ -116,12 +116,14 @@
    .coach-img {
     position: relative;
     z-index: 3;
+    padding-left: 13px;
     img {
       width: 100px;
+      
     }
     &::before {
       top: -4px;
-      left: -13px;
+      left: 0px;
       width: 100px;
       height: 143px;
 

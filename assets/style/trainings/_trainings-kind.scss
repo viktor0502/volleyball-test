@@ -1,0 +1,182 @@
+.kinds__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-height: fit-content;
+}
+.swiper-kinds {
+    
+    .swiper-pagination-bullets {
+        display: none;
+    }
+}
+.kinds__item {
+    padding: 32px 42px;
+    background: #fff;
+    display: flex;
+    gap: 50px;
+}
+.kinds__descr {
+    flex: 1 1 60%;
+}
+.kinds__img {
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+.kinds__img_text {
+    font-family: Condensed, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.17em;
+}
+.kinds__text {
+    font-family: Hebrew, sans-serif;
+
+    margin-top: 24px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: #393939;
+}
+.kinds-plan__title {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    display: none;
+}
+.kinds__plan {
+    font-family: Hebrew, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 40%;
+
+    .btn-yellow {
+        margin-top: 44px;
+        font-size: 18px;
+        line-height: 25px;
+        cursor: pointer;
+    }
+}
+.kinds__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    li {
+        span {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0.1em;
+            color: #222628;
+        }
+
+        display: flex;
+        gap: 16px;
+        small {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &::before {
+            content: url(../img/icons/Union.svg);
+        }
+    }
+}
+.programm__img_text--black {
+    background: #000;
+    color: #fff;
+}
+.trainings-coach {
+    padding: 0;
+}
+@media screen and (max-width: 1200px) {
+    .kinds__item {
+        gap: 32px;
+        padding: 24px;
+    }
+    .kinds__img {
+        max-width: 498px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .kinds__item {
+        gap: 24px;
+    }
+    .kinds__img_text {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.17em;
+        bottom: 24px;
+    }
+    .kinds__list {
+        li {
+            span {
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+    .kinds__plan {
+        .btn-yellow {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 24px;
+        }
+    }
+    .kinds__text {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+    }
+}
+@media screen and (max-width: 760px) {
+    .swiper-kinds {
+        padding-top: 30px;
+        max-height: fit-content;
+        .swiper-pagination-bullets {
+            display: block;
+            bottom: unset;
+            top: 0;
+        }
+    }
+    .kinds__descr {
+        flex: 1 1 50%;
+    }
+    .kinds__plan {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto 1fr;
+        .btn-yellow{
+            align-self: flex-end;
+        }
+    }
+    .kinds-plan__title {
+        display: block;
+        align-self: flex-start;
+    }
+    .kinds__item {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr;
+        flex-direction: column;
+        padding: 16px;
+        min-height: 1076px;
+    }
+    .kinds__img_text {
+        padding: 8px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.17em;
+    }
+    .kinds__wrapper {
+        flex-direction: row;
+        gap: 0;
+    }
+}

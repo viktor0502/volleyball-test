@@ -109,7 +109,8 @@
 
 @media screen and (max-width: 760px) {
   .coach__item {
-    gap: 0;
+   column-gap: 32px;
+    grid-template-columns: auto 1fr;
     .coach__img {
       grid-column: 1/2;
       grid-row: 1/2;
