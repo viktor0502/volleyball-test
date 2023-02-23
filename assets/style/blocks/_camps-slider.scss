@@ -148,6 +148,11 @@
       padding-top: 42px;
     }
   }
+  .camps-item{
+    &:hover{
+      transform: translate(0);
+    }
+  }
 }
 @media screen and (max-width: 760px) {
   .camps-slider__title {

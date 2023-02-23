@@ -109,3 +109,12 @@
         }
     }
 }
+@media screen and (max-width: 576px){
+    .training-form-section{
+        .form-section__title{
+            h2{
+                max-width: unset;
+            }
+        }
+    }
+}

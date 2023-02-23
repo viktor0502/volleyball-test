@@ -138,12 +138,11 @@
 }
 @media screen and (max-width: 760px) {
     .swiper-kinds {
-        padding-top: 30px;
+        padding-bottom: 30px;
         max-height: fit-content;
         .swiper-pagination-bullets {
             display: block;
-            bottom: unset;
-            top: 0;
+            bottom: 0;
         }
     }
     .kinds__descr {
@@ -162,6 +161,7 @@
         align-self: flex-start;
     }
     .kinds__item {
+        box-sizing: content-box;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto 1fr;

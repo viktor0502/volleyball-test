@@ -1,9 +1,11 @@
 .section-descr {
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.16em;
+    margin-top: 20px;
 }
-.trainings-coach__wrapper{
+.trainings-coach__wrapper {
     margin-top: 80px;
 }
 .timetable__wrapper {
@@ -96,17 +98,21 @@
         letter-spacing: 0.11em;
         color: #ffffff;
     }
-
 }
 .trainings-faq {
     padding: 0;
 }
 @media screen and (max-width: 1200px) {
-    .trainings-coach__wrapper{
+    .section-descr {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.16em;
+    }
+    .trainings-coach__wrapper {
         margin-top: 74px;
     }
     .trainings-ad-block {
-        .container{
+        .container {
             gap: 120px;
         }
         h3 {
@@ -117,11 +123,11 @@
     }
 }
 @media screen and (max-width: 992px) {
-    .trainings-coach__wrapper{
+    .trainings-coach__wrapper {
         margin-top: 52px;
     }
     .trainings-ad-block {
-        .container{
+        .container {
             gap: 40px;
         }
         h3 {
@@ -129,15 +135,20 @@
             line-height: 38px;
             letter-spacing: 0.11em;
         }
-        .btn{
+        .btn {
             max-width: 280px;
         }
     }
 }
 @media screen and (max-width: 760px) {
+    .section-descr {
+        font-size: 14px;
+        line-height: 19px;
+    }
     .trainings-ad-block {
-        .container{
+        .container {
             gap: 32px;
+            align-items: unset;
         }
         h3 {
             font-size: 22px;
