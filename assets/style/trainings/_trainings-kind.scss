@@ -3,6 +3,14 @@
     flex-direction: column;
     gap: 24px;
     max-height: fit-content;
+   
+    
+}
+.kinds{
+    .swiper-btns{
+        display: none;
+        margin-bottom: 1em;
+    }
 }
 .swiper-kinds {
     
@@ -137,6 +145,11 @@
     }
 }
 @media screen and (max-width: 760px) {
+    .kinds{
+        .swiper-btns{
+            display: flex;
+        }
+    }
     .swiper-kinds {
         padding-bottom: 30px;
         max-height: fit-content;

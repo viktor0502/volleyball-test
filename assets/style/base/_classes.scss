@@ -63,6 +63,8 @@
 .coach-img {
   position: relative;
   z-index: 3;
+  padding-left: 13px;
+
   img {
     position: relative;
     z-index: 3;
@@ -116,7 +118,6 @@
    .coach-img {
     position: relative;
     z-index: 3;
-    padding-left: 13px;
     img {
       width: 100px;
       
@@ -132,6 +133,11 @@
   .btn{
     &:hover{
       transform: unset;
+    }
+  }
+  .scale{
+    &:hover{
+      transform: translate(0);
     }
   }
 }

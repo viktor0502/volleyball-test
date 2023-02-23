@@ -53,6 +53,7 @@
   line-height: 22px;
   font-family: Hebrew, sans-serif;
   letter-spacing: 0.11em;
+  margin-top: 6px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -67,6 +68,9 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .benefits{
+    padding: 62px 0;
+  }
   .benefits__number {
     display: block;
   }
@@ -78,14 +82,17 @@
 }
 @media screen and (max-width: 760px) {
   .benefits__wrapper {
+    gap: 24px;
     flex-direction: column;
   }
   .benefits__number {
     display: unset;
+    font-size: 52px;
+    line-height: 71px;
   }
 }
-@media screen and (max-width: 560px){
-  .benefits{
+@media screen and (max-width: 560px) {
+  .benefits {
     background-attachment: unset;
     background-size: fill;
   }

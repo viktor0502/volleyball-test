@@ -251,8 +251,8 @@ function sliders() {
       el: ".swiper-pagination",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-review-button-next",
+      prevEl: ".swiper-review-button-prev",
     },
   });
   const swiperSchedule = new Swiper(".swiper-schedule", {
@@ -273,6 +273,10 @@ function sliders() {
     },
   });
   const swiperKinds = new Swiper(".swiper-kinds", {
+    navigation: {
+      nextEl: ".swiper-kinds-button-next",
+      prevEl: ".swiper-kinds-button-prev",
+    },
     pagination: {
       el: ".swiper-pagination",
     },

@@ -77,7 +77,7 @@ a {
 h2 {
   font-size: 48px;
   line-height: 65px;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.16em;
 }
 
 main {
@@ -170,6 +170,7 @@ main {
 .coach-img {
   position: relative;
   z-index: 3;
+  padding-left: 13px;
 }
 .coach-img img {
   position: relative;
@@ -217,7 +218,6 @@ main {
   .coach-img {
     position: relative;
     z-index: 3;
-    padding-left: 13px;
   }
   .coach-img img {
     width: 100px;
@@ -230,6 +230,9 @@ main {
   }
   .btn:hover {
     transform: unset;
+  }
+  .scale:hover {
+    transform: translate(0);
   }
 }
 .about {
@@ -295,6 +298,7 @@ main {
   line-height: 22px;
   font-family: Hebrew, sans-serif;
   letter-spacing: 0.11em;
+  margin-top: 6px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -308,6 +312,9 @@ main {
   }
 }
 @media screen and (max-width: 992px) {
+  .benefits {
+    padding: 62px 0;
+  }
   .benefits__number {
     display: block;
   }
@@ -317,10 +324,13 @@ main {
 }
 @media screen and (max-width: 760px) {
   .benefits__wrapper {
+    gap: 24px;
     flex-direction: column;
   }
   .benefits__number {
     display: unset;
+    font-size: 52px;
+    line-height: 71px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -926,7 +936,7 @@ main {
 
 @media screen and (max-width: 1400px) {
   .founder .container .founder__span {
-    width: 240px;
+    width: 213px;
     height: 225px;
     top: -20px;
     left: -50px;
@@ -964,7 +974,7 @@ main {
     transform: rotate(40deg);
   }
   .founder .container .founder__span.element-animation.element-show {
-    transform: rotate(20deg);
+    transform: rotate(16deg) translate(12%, 0);
   }
   .founder img {
     width: 359px;
@@ -986,8 +996,8 @@ main {
     padding-top: 184px;
   }
   .founder .container .founder__span {
-    left: 25%;
-    top: -17%;
+    left: 24%;
+    top: -15%;
   }
   .founder img {
     width: 313px;
@@ -1299,7 +1309,7 @@ nav {
     align-items: flex-start;
     top: 70px;
     left: -110%;
-    padding: 0 15px 50px;
+    padding: 34px 24px 50px;
     background: #0a0e17;
     width: 100%;
     max-height: 100vh;
@@ -1484,7 +1494,7 @@ nav {
     align-items: flex-start;
     top: 70px;
     left: -110%;
-    padding: 0 15px 50px;
+    padding: 34px 24px 50px;
     background: #0a0e17;
     width: 100%;
     max-height: 100vh;
@@ -2381,7 +2391,7 @@ nav {
   }
   .camp-video__text {
     font-size: 24px;
-    line-height: 33px;
+    line-height: 49px;
   }
   .camp-ad-block {
     padding: 51px 0;
@@ -2411,6 +2421,10 @@ nav {
   }
   .camp-video .camp-video__text {
     text-align: center;
+    line-height: 57px;
+  }
+  .camp-video .camp-video__text br {
+    display: block;
   }
   .camp-ad-block {
     padding: 43px 0;
@@ -3042,6 +3056,11 @@ nav {
   max-height: fit-content;
 }
 
+.kinds .swiper-btns {
+  display: none;
+  margin-bottom: 1em;
+}
+
 .swiper-kinds .swiper-pagination-bullets {
   display: none;
 }
@@ -3173,6 +3192,9 @@ nav {
   }
 }
 @media screen and (max-width: 760px) {
+  .kinds .swiper-btns {
+    display: flex;
+  }
   .swiper-kinds {
     padding-bottom: 30px;
     max-height: -moz-fit-content;
@@ -3536,6 +3558,6 @@ nav {
 @media screen and (max-width: 576px) {
   .container {
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 24px;
   }
 }/*# sourceMappingURL=style.css.map */

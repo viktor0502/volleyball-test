@@ -144,7 +144,7 @@ nav {
       align-items: flex-start;
       top: 70px;
       left: -110%;
-      padding: 0 15px 50px;
+      padding: 34px 24px 50px;
       background: $black-color;
       width: 100%;
       max-height: 100vh;
@@ -180,9 +180,4 @@ nav {
       line-height: 25px;
     }
   }
-}
-@media screen and (max-width: 560px){
-  nav{
-  }
-  
 }

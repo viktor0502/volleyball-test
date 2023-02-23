@@ -75,7 +75,7 @@
   .founder {
     .container {
       .founder__span {
-        width: 240px;
+        width: 213px;
         height: 225px;
         top: -20px;
         left: -50px;
@@ -116,7 +116,7 @@
           transform: rotate(40deg);
         }
         &.element-animation.element-show {
-          transform: rotate(20deg);
+          transform: rotate(16deg) translate(12%, 0);
         }
       }
     }
@@ -141,8 +141,8 @@
     padding-top: 184px;
     .container {
       .founder__span {
-        left: 25%;
-        top: -17%;
+        left: 24%;
+        top: -15%;
       }
     }
     img {
