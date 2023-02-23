@@ -159,3 +159,12 @@ header {
     }
   }
 }
+@media screen and (max-width: 576px){
+  .header__title{
+    h1{
+      span{
+        display: block;
+      }
+    }
+  }
+}

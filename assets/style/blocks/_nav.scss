@@ -84,6 +84,13 @@ nav {
 }
 @media screen and (max-width: 760px) {
   nav {
+    padding: 10px 0;
+    .nav__logo{
+      display: inline-block;
+      img{
+        max-height: 50px;
+      }
+    }
     .nav__burger-menu {
       position: relative;
       width: 30px;
@@ -176,14 +183,6 @@ nav {
 }
 @media screen and (max-width: 560px){
   nav{
-    padding: 10px 0;
   }
-  .nav__logo{
-    display: inline-block;
-    img{
-      max-height: 50px;
-
-
-    }
-  }
+  
 }

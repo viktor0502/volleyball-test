@@ -1145,191 +1145,9 @@ header {
     transform: rotate(13deg);
   }
 }
-nav {
-  position: fixed;
-  background: #0a0e17;
-  padding: 15px 0;
-  width: 100%;
-  z-index: 100;
-  top: 0;
-  left: 0;
-}
-
-.nav__wrapper {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
-}
-
-.nav__menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
-  flex: 1 1 auto;
-}
-
-.nav__list {
-  display: flex;
-  gap: 32px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
-  letter-spacing: 0.05em;
-}
-
-.nav__link,
-.nav__contacts {
-  transition: 0.2s;
-}
-.nav__link:hover,
-.nav__contacts:hover {
-  color: #ffce18;
-}
-
-.nav__contacts {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.nav__logo {
-  flex: 1 0 auto;
-}
-.nav__logo img {
-  max-width: 111px;
-}
-
-.nav__burger-menu {
-  display: none;
-}
-
-@media screen and (max-width: 1200px) {
-  .nav__list {
-    font-size: 16px;
-    line-height: 22px;
-    gap: 24px;
-  }
-  .nav__logo img {
-    max-width: 95px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .nav__wrapper {
-    gap: 24px;
-  }
-  .nav__list {
-    gap: 12px;
-  }
-  .nav__contacts {
-    font-size: 14px;
-    line-height: 30px;
-    gap: 10px;
-  }
-  .nav__contacts img {
-    width: 15px;
-  }
-}
-@media screen and (max-width: 760px) {
-  nav .nav__burger-menu {
-    position: relative;
-    width: 30px;
-    height: 18px;
-    margin-left: auto;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    display: flex;
-    z-index: 999;
-  }
-  nav .nav__burger-menu span, nav .nav__burger-menu::before, nav .nav__burger-menu::after {
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    transition: 0.4s;
-    content: "";
-    position: absolute;
-    left: 0;
-  }
-  nav .nav__burger-menu::before {
-    top: 0;
-  }
-  nav .nav__burger-menu::after {
-    bottom: 0;
-  }
-  nav .nav__burger-menu span {
-    transform: scale(1);
-  }
-  nav .nav__burger-menu--active span {
-    transform: scale(0);
-    background: #fff;
-  }
-  nav .nav__burger-menu--active::before {
-    top: 44%;
-    transform: rotate(45deg);
-    background: #fff;
-  }
-  nav .nav__burger-menu--active::after {
-    bottom: 40%;
-    transform: rotate(-45deg);
-    background: #fff;
-  }
-  nav .nav__menu {
-    position: fixed;
-    flex-direction: column;
-    align-items: flex-start;
-    top: 70px;
-    left: -110%;
-    padding: 0 15px 50px;
-    background: #0a0e17;
-    width: 100%;
-    max-height: 100vh;
-    height: 100%;
-    transition: 0.2s;
-    justify-content: flex-start;
-    gap: 50px;
-  }
-  nav .nav__menu--active {
-    left: 0;
-  }
-  nav .nav__list {
-    max-width: 570px;
-    margin: 0 auto 0 0;
-    flex-direction: column;
-    font-size: 30px;
-    line-height: 41px;
-    letter-spacing: 0.05em;
-    width: 90%;
-  }
-  nav .nav__list li {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  nav .nav__list li::after {
-    content: url(../img/icons/Arrow.svg);
-  }
-  nav .nav__contacts {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-  }
-}
-@media screen and (max-width: 560px) {
-  nav {
-    padding: 10px 0;
-  }
-  .nav__logo {
-    display: inline-block;
-  }
-  .nav__logo img {
-    max-height: 50px;
+@media screen and (max-width: 576px) {
+  .header__title h1 span {
+    display: block;
   }
 }
 nav {
@@ -1423,6 +1241,15 @@ nav {
   }
 }
 @media screen and (max-width: 760px) {
+  nav {
+    padding: 10px 0;
+  }
+  nav .nav__logo {
+    display: inline-block;
+  }
+  nav .nav__logo img {
+    max-height: 50px;
+  }
   nav .nav__burger-menu {
     position: relative;
     width: 30px;
@@ -1508,15 +1335,189 @@ nav {
     line-height: 25px;
   }
 }
-@media screen and (max-width: 560px) {
+nav {
+  position: fixed;
+  background: #0a0e17;
+  padding: 15px 0;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.nav__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex: 1 1 auto;
+}
+
+.nav__list {
+  display: flex;
+  gap: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+}
+
+.nav__link,
+.nav__contacts {
+  transition: 0.2s;
+}
+.nav__link:hover,
+.nav__contacts:hover {
+  color: #ffce18;
+}
+
+.nav__contacts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.nav__logo {
+  flex: 1 0 auto;
+}
+.nav__logo img {
+  max-width: 111px;
+}
+
+.nav__burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav__list {
+    font-size: 16px;
+    line-height: 22px;
+    gap: 24px;
+  }
+  .nav__logo img {
+    max-width: 95px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav__wrapper {
+    gap: 24px;
+  }
+  .nav__list {
+    gap: 12px;
+  }
+  .nav__contacts {
+    font-size: 14px;
+    line-height: 30px;
+    gap: 10px;
+  }
+  .nav__contacts img {
+    width: 15px;
+  }
+}
+@media screen and (max-width: 760px) {
   nav {
     padding: 10px 0;
   }
-  .nav__logo {
+  nav .nav__logo {
     display: inline-block;
   }
-  .nav__logo img {
+  nav .nav__logo img {
     max-height: 50px;
+  }
+  nav .nav__burger-menu {
+    position: relative;
+    width: 30px;
+    height: 18px;
+    margin-left: auto;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    display: flex;
+    z-index: 999;
+  }
+  nav .nav__burger-menu span, nav .nav__burger-menu::before, nav .nav__burger-menu::after {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: 0.4s;
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  nav .nav__burger-menu::before {
+    top: 0;
+  }
+  nav .nav__burger-menu::after {
+    bottom: 0;
+  }
+  nav .nav__burger-menu span {
+    transform: scale(1);
+  }
+  nav .nav__burger-menu--active span {
+    transform: scale(0);
+    background: #fff;
+  }
+  nav .nav__burger-menu--active::before {
+    top: 44%;
+    transform: rotate(45deg);
+    background: #fff;
+  }
+  nav .nav__burger-menu--active::after {
+    bottom: 40%;
+    transform: rotate(-45deg);
+    background: #fff;
+  }
+  nav .nav__menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 70px;
+    left: -110%;
+    padding: 0 15px 50px;
+    background: #0a0e17;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    transition: 0.2s;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  nav .nav__menu--active {
+    left: 0;
+  }
+  nav .nav__list {
+    max-width: 570px;
+    margin: 0 auto 0 0;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    width: 90%;
+  }
+  nav .nav__list li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav__list li::after {
+    content: url(../img/icons/Arrow.svg);
+  }
+  nav .nav__contacts {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 .faq {
