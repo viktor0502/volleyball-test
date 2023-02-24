@@ -9,7 +9,7 @@
 .kinds{
     .swiper-btns{
         display: none;
-        margin-bottom: 1em;
+        margin-bottom: 20px;
     }
 }
 .swiper-kinds {
@@ -151,11 +151,22 @@
         }
     }
     .swiper-kinds {
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         max-height: fit-content;
         .swiper-pagination-bullets {
-            display: block;
-            bottom: 0;
+            display: flex;
+            .swiper-pagination-bullet{
+
+                background: #fff;
+                display: block;
+                bottom: 0;
+                max-width: 28px;
+                border-radius: 26px 26px 0 0;
+                &-active{
+                    background: $blue-hard;
+                    max-width: 43px;
+                }
+            }
         }
     }
     .kinds__descr {

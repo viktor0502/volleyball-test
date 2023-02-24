@@ -89,6 +89,66 @@ function burgerMenu(burgerBtnSelector, navMenuSelector, linksSelector) {
 
 /***/ }),
 
+/***/ "./src/js/modules/camps.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/camps.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// class Camp {
+//   constructor(date, location, parent) {
+//     this.date = date;
+//     this.location = location;
+//     this.parent = document.querySelector(parent);
+//   }
+//   render() {
+//     const elem = document.createElement("div");
+//     elem.innerHTML = `
+//       <div class="camps-slider__item camps-item">
+//         <div class="camps-item__img">
+//           <img src="./assets/img/trains/train2.png" alt="train" />
+//         </div>
+//         <div class="camps-item__content">
+//           <p class="camps-item__date">${date}</p>
+//           <p class="camps-item__location">${location}</p>
+//           <a class="btn btn-yellow" href="#">Подробнее</a>
+//         </div>
+//       </div>
+//       `;
+//     this.parent.append(elem);
+//   }
+// }
+// в ВП создает слайд, куда помещается дата локация и картинка кастомно
+function camps() {
+  const btnSoon = document.getElementById("soon");
+  const btnOver = document.getElementById("over");
+  const btns = document.querySelector(".camps-slider__btns");
+
+    function showSoonCamps(){
+        
+    }
+
+
+
+  btns.addEventListener("click", (e) => {
+    if (e.target == btnSoon) {
+      btnSoon.classList.add("camps-slider__btn--active");
+      btnOver.classList.remove("camps-slider__btn--active");
+    }
+    if (e.target == btnOver) {
+      btnSoon.classList.remove("camps-slider__btn--active");
+      btnOver.classList.add("camps-slider__btn--active");
+    }
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (camps);
+
+/***/ }),
+
 /***/ "./src/js/modules/form.js":
 /*!********************************!*\
   !*** ./src/js/modules/form.js ***!
@@ -4415,6 +4475,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_sliders__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliders */ "./src/js/modules/sliders.js");
 /* harmony import */ var _modules_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/form */ "./src/js/modules/form.js");
 /* harmony import */ var _modules_smoothScrolling__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/smoothScrolling */ "./src/js/modules/smoothScrolling.js");
+/* harmony import */ var _modules_camps__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/camps */ "./src/js/modules/camps.js");
+
 
 
 
@@ -4431,31 +4493,9 @@ window.addEventListener("DOMContentLoaded", () => {
     $("#phone").mask("+7(999) 999-9999");
   });
   (0,_modules_smoothScrolling__WEBPACK_IMPORTED_MODULE_5__["default"])()
+  ;(0,_modules_camps__WEBPACK_IMPORTED_MODULE_6__["default"])()
 });
 
-// class Camp {
-//   constructor(date, location, parent) {
-//     this.date = date;
-//     this.location = location;
-//     this.parent = document.querySelector(parent);
-//   }
-//   render() {
-//     const elem = document.createElement("div");
-//     elem.innerHTML = `
-//       <div class="camps-slider__item camps-item">
-//         <div class="camps-item__img">
-//           <img src="./assets/img/trains/train2.png" alt="train" />
-//         </div>
-//         <div class="camps-item__content">
-//           <p class="camps-item__date">${date}</p>
-//           <p class="camps-item__location">${location}</p>
-//           <a class="btn btn-yellow" href="#">Подробнее</a>
-//         </div>
-//       </div>
-//       `;
-//     this.parent.append(elem);
-//   }
-// }
 
 })();
 

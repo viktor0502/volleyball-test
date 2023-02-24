@@ -16,6 +16,7 @@
   letter-spacing: 0.17em;
 }
 .camps-slider__btn {
+  cursor: pointer;
   &--active {
     color: $yellow-light;
     position: relative;

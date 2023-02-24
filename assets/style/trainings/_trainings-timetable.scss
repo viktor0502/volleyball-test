@@ -1,4 +1,5 @@
 .section-descr {
+    font-family: Hebrew, sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -7,11 +8,16 @@
 }
 .trainings-coach__wrapper {
     margin-top: 80px;
+    .coach__list{
+        padding-bottom: 0;
+        border-bottom: none;
+    }
 }
 .timetable__wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    
 }
 
 .timetable__item {
@@ -171,5 +177,10 @@
     }
     .timetable__coach {
         max-width: unset;
+    }
+    .section-descr{
+        span{
+            display: block;
+        }
     }
 }

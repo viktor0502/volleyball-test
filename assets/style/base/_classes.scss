@@ -70,12 +70,13 @@
     z-index: 3;
     border-radius: 100%;
     width: 189px;
+    max-height: 190px;
   }
   &::before {
     content: "";
     position: absolute;
     top: -7px;
-    left: -24px;
+    left: -11px;
     border-radius: 150.759px;
     transform: rotate(35.98deg);
     width: 190px;
@@ -107,7 +108,7 @@
     }
     &::before {
       top: -5px;
-      left: -18px;
+      left: -5px;
       width: 148px;
       height: 209px;
 

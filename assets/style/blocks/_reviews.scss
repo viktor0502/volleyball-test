@@ -202,6 +202,11 @@
     }
   }
 }
+@media screen and (max-width: 760px){
+  .swiper-btns{
+    gap: 24px;
+  }
+}
 @media screen and (max-width: 576px) {
   .review__title {
     flex-direction: column;

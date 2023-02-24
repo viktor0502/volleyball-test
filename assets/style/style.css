@@ -177,12 +177,13 @@ main {
   z-index: 3;
   border-radius: 100%;
   width: 189px;
+  max-height: 190px;
 }
 .coach-img::before {
   content: "";
   position: absolute;
   top: -7px;
-  left: -24px;
+  left: -11px;
   border-radius: 150.759px;
   transform: rotate(35.98deg);
   width: 190px;
@@ -209,7 +210,7 @@ main {
   }
   .coach-img::before {
     top: -5px;
-    left: -18px;
+    left: -5px;
     width: 148px;
     height: 209px;
   }
@@ -358,6 +359,9 @@ main {
   letter-spacing: 0.17em;
 }
 
+.camps-slider__btn {
+  cursor: pointer;
+}
 .camps-slider__btn--active {
   color: #ffce18;
   position: relative;
@@ -692,12 +696,14 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 72px;
   }
   .footer__nav .nav__list {
     flex-direction: column;
     font-size: 20px;
     line-height: 27px;
     letter-spacing: 0.05em;
+    gap: 34px;
   }
 }
 .form-section {
@@ -1729,6 +1735,11 @@ nav {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 760px) {
+  .swiper-btns {
+    gap: 24px;
+  }
+}
 @media screen and (max-width: 576px) {
   .review__title {
     flex-direction: column;
@@ -2451,10 +2462,16 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
 .programm__item {
-  flex: 1 1 50%;
+  flex: 1 1 40%;
+}
+.programm__item:last-child img {
+  max-height: 344px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .programm__img {
@@ -2493,7 +2510,7 @@ nav {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.1em;
   color: #000000;
   font-family: Hebrew, sans-serif;
   background: #fff;
@@ -2507,6 +2524,10 @@ nav {
 .programm-blue-span {
   font-weight: 700;
   color: #508dff;
+}
+
+.programm-black-span {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2526,6 +2547,9 @@ nav {
   .programm__content {
     font-size: 16px;
   }
+  .programm__item:last-child img {
+    max-height: 269px;
+  }
 }
 @media screen and (max-width: 992px) {
   .programm {
@@ -2536,11 +2560,30 @@ nav {
   }
   .programm__wrapper {
     flex-wrap: wrap;
+    gap: 24px;
+  }
+  .programm__item {
+    flex: 1 1 100%;
+  }
+  .programm__item:last-child img {
+    max-height: 300px;
   }
 }
 @media screen and (max-width: 760px) {
   .programm {
     padding: 80px 0;
+  }
+  .programm__img_text {
+    font-size: 18px;
+    line-height: 25px;
+    bottom: 30px;
+    max-width: 70%;
+  }
+  .programm__img img:hover {
+    transform: scale(1);
+  }
+  .programm__item:last-child img {
+    max-height: 209px;
   }
 }
 .package {
@@ -3058,7 +3101,7 @@ nav {
 
 .kinds .swiper-btns {
   display: none;
-  margin-bottom: 1em;
+  margin-bottom: 20px;
 }
 
 .swiper-kinds .swiper-pagination-bullets {
@@ -3196,13 +3239,23 @@ nav {
     display: flex;
   }
   .swiper-kinds {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     max-height: -moz-fit-content;
     max-height: fit-content;
   }
   .swiper-kinds .swiper-pagination-bullets {
+    display: flex;
+  }
+  .swiper-kinds .swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #fff;
     display: block;
     bottom: 0;
+    max-width: 28px;
+    border-radius: 26px 26px 0 0;
+  }
+  .swiper-kinds .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: #0059ff;
+    max-width: 43px;
   }
   .kinds__descr {
     flex: 1 1 50%;
@@ -3240,6 +3293,7 @@ nav {
   }
 }
 .section-descr {
+  font-family: Hebrew, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -3249,6 +3303,10 @@ nav {
 
 .trainings-coach__wrapper {
   margin-top: 80px;
+}
+.trainings-coach__wrapper .coach__list {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .timetable__wrapper {
@@ -3415,6 +3473,9 @@ nav {
   }
   .timetable__coach {
     max-width: unset;
+  }
+  .section-descr span {
+    display: block;
   }
 }
 .training-form-section label[for=politic] {
